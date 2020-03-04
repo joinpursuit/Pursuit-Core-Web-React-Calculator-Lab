@@ -1,0 +1,130 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 30% 15% 15% 15% 15% 15%;
+  grid-template-areas: "display display display display" "ac percent negPos divide" "seven eight nine multiply" "four five six subtract" "one two three add" "zero zero dot equal";
+  height: 550px;
+  width: 800px;
+}
+div {
+  display: block;
+}
+.display {
+  background-color: #333333;
+  display: flex;
+  justify-content: flex-end;
+
+  font-size: 40px;
+  color: white;
+  grid-area: display;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.equal {
+  grid-area: equal;
+}
+
+.ac {
+  grid-area: ac;
+}
+
+.percent {
+  grid-area: percent;
+}
+
+.negPos {
+  grid-area: negPos;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.subtract {
+  grid-area: subtract;
+}
+
+.add {
+  grid-area: add;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+button {
+  background-color: #e0e0e6;
+  height: 93px;
+  width: -webkit-fill-available;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: #666666;
+  border-left: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button:active {
+  box-shadow: inset 0px 0px 80px 0px rgba(0, 0, 0, 0.25);
+}
+
+#opperator {
+  background-color: #ee9b3e;
+  color: #fff;
+}
+
+#neggPos {
+  text-decoration: underline;
+}
