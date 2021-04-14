@@ -1,0 +1,19 @@
+button {
+    background-color: darkgrey;
+    width: 15%;
+    height: 60px;
+    color: white;  
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+span {
+    background-color: darkgrey;
+    width: 20%;
+}
+
+
+
+#plus, #equal, #minus, #multiply, #divide {
+    background-color: orange;
+}
