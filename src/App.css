@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@font-face {
+  font-family: Terminator;
+  src: url("./terminator.otf") format("opentype");
+}
+
+.nav {
+  width: 100vw;
+}
+
+.title {
+  color: #2F2F31;
+  text-align: center;
+  font-family: "Terminator", sans-serif;
+  font-size: 100px;
+  text-shadow: #47f3e4 1px 0 10px;
+  text-decoration: underline;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.shadows {
+  border-radius: 50%;
+  margin: 10px;
+  padding: auto;
+  transform: perspective(900px) rotateX(60deg) scale(0.9);
+  box-shadow: 0px 20px 100px rgba(85, 85, 85, 0.139);
+  transition: 0.5s ease all;
+}
+.shadows:hover {
+  transform: rotate(0deg) scale(1) translateY(10px);
+}
+
+
+.calculator {
+  margin: 0;
+  width: 700px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 1fr repeat(7, 10%);
+  border: solid 4px rgb(14, 12, 12);
+  border-radius: 8px;
+  grid-column: 1/-1;
+  transform: translatey(-10px);
+}
+
+.display {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 6;
+  font-size: 60px;
+  text-align: right;
+  padding: 10px;
+}
+
+.preview {
+  color: rgba(245, 245, 245, 0.995);
+  font-size: 36px;
+}
+.glass {
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+}
+
+.button {
+  padding: 4px;
+  height: 100%;
+  font-size: 26px;
+  background-color: rgba(255, 255, 255, 0.598);
+  backdrop-filter: blur(10px);
+  font-weight: bold;
+  color: #E63946;
+}
+
+.scientific:hover {
+  background-color: rgba(255, 255, 255, 0.851);
+  font-weight: bolder;
+  color: #1D3557;
+}
+
+.control {
+  color: white;
+  background-color: rgba(240, 144, 27, 0.892);
+  backdrop-filter: blur(10px);
+}
+.control:hover {
+  background-color: rgba(255, 140, 0, 0.968);
+  font-weight: bolder;
+}
+
+.number {
+  color: white;
+  background-color: rgba(50, 47, 47, 0.632);
+  backdrop-filter: blur(10px);
+}
+.number:hover {
+  background-color: rgba(21, 19, 19, 0.995);
+  font-weight: bolder;
+}
+
+.ac {
+  grid-area: 4 / 1 / 5 /3;
+}
+
+.result {
+  grid-area: 5 / 5 / 9 / 6;
+  background-color: rgba(62, 60, 60, 0.995);
+  backdrop-filter: blur(10px);
+}
+
+.result:hover {
+  background-color: rgba(9, 3, 3, 0.995);
+}
+
+.zero {
+  grid-area: 8 / 1 / 9 / 3;
+}
+
+
+.boldMessage{
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: larger;
+  color: black;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1080px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .calculator {
+    width: 99%;
+    height: 98%;
+    transform: translateY(-2px);
+  }
+
+  .display {
+    font-size: 50px;
+  }
+
+  .preview {
+    font-size: 34px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+}

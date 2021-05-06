@@ -1,112 +1,154 @@
-# React Calculator
+# Calculator
 
-Create a React app that mimics a simple calculator
+[Live Site](https://daniel-naranjo-calculator.netlify.app/)
 
-## Overview
+`https://daniel-naranjo-calculator.netlify.app/`
 
-- Please use `create-react-app` to generate your project
-- Break your application down to necessary components
+[Trello Board](https://trello.com/b/6aZbDUXd/daniel-naranjos-react-calculator)
 
-## UI
+* An accessible, youth-friendly, and responsive component-based Calculator app written with `JavaScript` &ensp;&amp;&ensp; `React`.
 
-Example project: https://www.coreyladovsky.com/calculator/
+* The calculator utilizes JavaScript libraries to implement the fastest build-in methods to solve Math. 
 
-Feel free to make the design your own.  Here are some real calculator UIs that you can use for inspiration.
+* This app is accessible, passing the `Lighthouse` audits and resolving potential security vulnerabilities.&ensp;&ensp;`Performance : 99%`
 
-<img src="./images/exampleScreenshotOne.png" alt="Example One" width="400">
-<img src="./images/exampleScreenshotTwo.png" alt="Example Two" width="400">
-<img src="./images/exampleScreenshotThree.png" alt="Example Three" width="400">
+## ___Calculator Acceptance criteria & UI Design___
 
-## User Stories, Acceptance Criteria, and Code Quality Rubric
-
-You must implement all of the user stories and acceptance criteria below. After those are completed, look at and implement as many of the stretch features as you want to.
-
-### User Stories
-
-1. I can see a calculator UI.
-1. I can enter and see positive and negative integers.
-1. I can add, subtract, multiply, and divide.
-1. I can clear my input to reset everything.
-1. I can visit the calculator on the Internet.
-
-### Acceptance Criteria
-
-**I can see a calculator UI.**
-
-- I can see a number keypad on the calculator with the numbers 0-9.
-- I can see keys for the plus, subtract, multiple, and divide operators.
+- I can see a number keypad on the calculator with the numbers 0-9
+- I can see keys for the plus, subtract, multiply and divide operators.
 - I can see an equals `=` key.
 - I can see a `+/-` key.
 - I can see an all clear key `AC`.
 - I can see a "screen" which shows a default value of 0.
 
-**I can enter readable positive and negative integers.**
+<br/>
 
-- I can click a number key and see the number on the screen.
-- I can enter multi-digit numbers on the keypad and see them on the screen.
-- When I enter a number of 1,000 or more, I see commas appear in the right place to format the number. (Example: 14,563,024)
-- I can make a positive number negative (or vice versa) with the `+/-` key.
+  ## ***Functionality***
 
-**I can add, subtract, multiply, and divide.**
+  <br/>
 
-- I can enter a number, `+`, another number, then `=` and see the correct addition result.
-- I can enter a number, `-`, another number, then `=` and see the correct subtraction result.
-- I can enter a number, `x`, another number, then `=` and see the correct multiplication result.
-- I can enter a number, `x`, another number, then `=` and see the correct division result _rounded to the nearest integer_.
+  **I can enter readable +/- integers**
 
-**I can clear my input to reset everything.**
+  - I can click a number key and see the number on the screen.
+  - I can enter multi-digit numbers on the keyboard and see them on the screen.
+  - When I enter a number of 1,000 or more, I see commas appear in the right place to format the number.
+  - I can make a positive number negative (or vice versa) with the `+/-` key.
 
-- When I click the clear key, the number on the screen is removed.
-- When I click the clear key, I see a default number `0` on the screen.
-- When I click the clear key during a calculation in progress, the full state is reset. (When I push `=`, the screen should still say `0`)
+  <br/>
 
-**I can visit the calculator on the Internet.**
+  **I can add, subtract, multiply and divide**
 
-- A working public URL is submitted that loads the project.
+  - I can enter a number, `+`. another number, then `=` and see the correct addition result.
+  - I can enter a number, `-`. another number, then `=` and see the correct subtraction result.
+  - I can enter a number, `x`. another number, then `=` and see the correct multiplication result.
 
-### Code Quality Rubric
+  <br/>
 
-- Use JSX to create components
-- Use create-react-app to build React applications
-- Respond to user input to update the views in a React app
-- Use state to build stateful React applications
-- Use Flexbox and/or Grid to lay out a page
+  **ScreenShots**
+  - Operations
 
-### Stretch Features
+    <br/>
+    <img src="./public/Operations.gif" alt="Operations">
+    
+    --------
+  - Scientific notation
 
-- `.` button that adds a decimal point to the current number
-- `%` button that converts the current value into a percentage
-- Support exponentiation and square roots
-- Support geometric operations (`sin`, `cos`, `tan`, etc.)
+    <br/>
+    <img src="./public/Scientific Notation.gif" alt="Scientific notation">
 
-### Stretchier Stretch Features
-- Write Cypress tests for your calculator!
-- Support large and small numbers with [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation#E_notation)
-- Change the clear button to toggle between:
-    - AC Clears all of the data in the screen and all the history
-    - C: Clears only what is being displayed
-- Chain together multiple operands
-    - ex:  5 + 5 + 5
+    --------
+  - Preserve State
+    
+    <br/>
+    <img src="./public/Preserve State.gif" alt="Preserve State">
+      
 
-### Super-Stretch Features
-- Chain together multiple equals sign button pushes
-    - ex: `5` `+` `5` `=` `=` `=` should display `20`
-- `()` buttons to support order of operations
-- Implement [Dijkstra's famous two-stack algorithm](https://youtu.be/0sixdU-cehs?t=395) to calculate expressions with `()`
+<br/>
+<br/>
+
+## ___Libraries___
+<br/>
+
+1. [`math.js`](https://mathjs.org/)
+
+* ```nodejs
+  npm install mathjs
+  ```
+    ```javascript
+  import { create, all } from 'mathjs'
+    
+    const config = { }
+    const math = create(all, config)
+  ```
+
+2. [`css-doodle`](https://css-doodle.com/)
+
+* ```nodejs
+  npm install css-doodle
+  ```
+    ```javascript
+  import 'css-dodle'
+  ```
+
+3. [`React-Toastify`](https://fkhadra.github.io/react-toastify/introduction)
+
+* ```bash
+  npm install --save react-toastify
+  ```
+  ```javascript
+  import { ToastContainer, toast } from 'react-toastify'
+
+  import 'react-toastify/dist/ReactToastify.css'
+
+  import { Slide, Zoom, Flip, Bounce } from 'react-toastify'
+  ```
 
 
-Helpful Libraries for Decimals:
-- [decimal.js](https://mikemcl.github.io/decimal.js/)
-- [math.js](https://mathjs.org/)
 
 
-## State
 
-State will be an important component of your application.  It may be helpful to think about incorporating the following elements into your state:
 
-- displayValue (What the screen currently displays)
-- previousValue (What value the user selected before pressing an operation button)
-- operation (What operation the user is performing (+/-/÷/x))
+<br/>
+<br/>
 
-## Deploy 
-Deploy your app following these [instructions](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/react/react_deployment)
+## ___FrontEnd___
+<br/>
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<img src="https://api.iconify.design/logos:javascript.svg" height="36px">
+&ensp;&ensp;&ensp;&ensp;
+<img src="https://api.iconify.design/logos:html-5.svg" height="44px">
+&ensp;&ensp;&ensp;&ensp;
+<img src="https://api.iconify.design/logos:css-3.svg" height="44px">
+&ensp;&ensp;&ensp;&ensp;
+<img src="https://api.iconify.design/logos:react.svg" width="36px" height="36px">
+<br/>
+<br/>
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<img src="https://api.iconify.design/logos:trello.svg" height="34px">
+&ensp;&ensp;
+<img src="https://api.iconify.design/logos:markdown.svg" height="34px">
+&ensp;&ensp;
+<img src="https://api.iconify.design/logos:npm-icon.svg" height="32px">
+&ensp;&ensp;&ensp;&ensp;
+<img src="https://api.iconify.design/logos:visual-studio-code.svg" height="32px">
+
+
+<br/>
+<br/>
+<br/>
+
+## ___BackEnd___
+<br/>
+<br/>
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<img src="https://api.iconify.design/logos:netlify.svg" width="36px" height="36px">
+&ensp;&ensp;&ensp;&ensp;
+<img src="https://api.iconify.design/logos:circleci.svg" width="36px" height="36px">
+&ensp;&ensp;&ensp;&ensp;
+<img src="https://api.iconify.design/logos:git.svg" height="36px">
+
+
+ <br />
+ <br />
+
+  ##### ***made*** by &ensp;<sub>&ensp;&ensp;`Daniel Naranjo`<small>&ensp;&ensp;2021</small></sub>
