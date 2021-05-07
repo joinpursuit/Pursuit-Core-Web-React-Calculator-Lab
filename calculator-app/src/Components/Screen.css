@@ -1,0 +1,16 @@
+.screen-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.screen {
+  width: 335px;
+  height: 50px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #233d39;
+  background-color: #b0bacf;
+  border: solid #4c7c75;
+  border-radius: 5px;
+}
