@@ -1,0 +1,14 @@
+.result {
+  /* display: flex; */
+  /* grid-template-columns: 1fr; */
+  /* justify-content: center;
+  align-items: center; */
+  height: 60px;
+  background-color: #bbb;
+  width: 400px;
+}
+
+.result p {
+  font-size: 40px;
+  margin: 5px;
+}
