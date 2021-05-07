@@ -1,0 +1,9 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(#3d949f, #31238b, #5e1b6f);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+
