@@ -1,0 +1,14 @@
+.outputDisplay {
+    border: 1px solid #f4acb7;
+    min-width: 84%;
+    width: auto;
+    min-height: 48px;
+    height: auto;
+    font-size: 40px;
+    margin-top: 10px;
+    background-color: #faedcb;
+    color: #ff928b;
+   text-align: end;
+   text-overflow: clip;
+   word-break:break-all
+}
