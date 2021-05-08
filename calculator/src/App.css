@@ -1,0 +1,49 @@
+body {
+  background: linear-gradient(-45deg, #b7d8eb, #3da6eb, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: white;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  text-align: center;
+  margin: auto;
+  max-width: 400px;
+}
+
+.result {
+  background-color: rgb(239, 246, 247);
+  color: black;
+  height: 60px;
+  width: 100%;
+}
+.result p {
+  font-size: 35px;
+}
+
+.button {
+  display: block;
+  background-color: gray;
+}
+
+.button button {
+  width: 20%;
+  height: 60px;
+  font-size: 35px;
+  background: linear-gradient(-45deg, #8b9599, #9bb1e2, #b3d0db, #576e69);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color:black;
+
+}
