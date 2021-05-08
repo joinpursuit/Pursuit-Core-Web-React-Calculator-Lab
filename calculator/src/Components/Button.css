@@ -1,0 +1,40 @@
+.result {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 60px;
+  background-color: rgb(255, 213, 255);
+  width: 100%;
+}
+
+.result p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  margin: 5px;
+}
+
+.body {
+  max-width: 400px;
+  margin: auto;
+}
+
+.button {
+  background-color: rgb(243, 193, 255);
+}
+
+button {
+  width: 25%;
+  height: 60px;
+  font-size: 40px;
+}
+
+button:active {
+  box-shadow: #d77cee;
+}
+
+.zero {
+  width: 50%;
+}
+
+.button-right {
+  background-color: #d77cee;
+  color: #fff;
+}
