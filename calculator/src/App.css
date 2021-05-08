@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: skyblue;
+  display: grid;
+  place-content: center;
+  font-family: sans-serif;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.container {
+  height: 80vh;
+  width: 50vh;
+  background-color: black;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  font-size: 4rem;
+}
+
+.button {
+  display: grid;
+  place-content: center;
+  background-color: grey;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#AC {
+  background-color: orange;
+}
+
+#plusminus {
+  background-color: orange;
+}
+
+#percent {
+  background-color: orange;
+}
+
+#divide {
+  background-color: orange;
+}
+
+#times {
+  background-color: orange;
+}
+#subtract {
+  background-color: orange;
+}
+#add {
+  background-color: orange;
+}
