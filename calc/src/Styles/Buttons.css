@@ -1,0 +1,35 @@
+#wrapper {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    margin: auto;
+}
+
+button {
+    width: 50px;
+    outline: 1px solid black;
+}
+
+#numbers {
+    background-color: lightgrey;
+}
+
+#operators {
+    background-color: yellow;
+}
+
+#all-clear {
+    background-color: red;
+}
+
+#equals {
+    background-color: rgb(20, 165, 20);
+}
+
+#others {
+    background-color: orange;
+}
