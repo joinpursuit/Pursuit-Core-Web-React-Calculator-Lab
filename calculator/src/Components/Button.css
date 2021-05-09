@@ -1,0 +1,30 @@
+button {
+	height: 4em;
+	outline: 1px solid #dfdddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lavender;
+	color: #3e26c7;
+	flex: 1;
+}
+
+.btn-container {
+	justify-content: center;
+	align-items: center;
+}
+
+.display {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 2em;
+	/* width: 100%; */
+	background-color: black;
+	outline: 1px solid grey;
+	color: white;
+	flex: 1;
+	font-weight: bold;
+	font-size: 2em;
+	padding-right: 10px;
+}
