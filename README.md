@@ -110,3 +110,4 @@ State will be an important component of your application.  It may be helpful to 
 
 ## Deploy 
 Deploy your app following these [instructions](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/react/react_deployment)
+<!-- https://calculatr-poonamdass.netlify.app/ -->

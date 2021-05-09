@@ -1,0 +1,17 @@
+.containerButtons{
+    width: 25%;
+    padding: .5rem;
+    background-color: #12232E;
+  
+  
+   
+ }
+  
+ button {
+    width: 25%;
+    height: 60px;
+    font-size: 30px;
+    background-color: #4da8da;
+    color: #EEFBFB;
+  }
+ 
