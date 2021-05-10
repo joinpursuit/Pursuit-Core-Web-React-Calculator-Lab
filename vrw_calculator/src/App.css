@@ -1,0 +1,82 @@
+.numero {
+  grid-area: nm;
+}
+.operator {
+  grid-area: op;
+}
+.equal {
+  grid-area: eq;
+}
+.decimal {
+  grid-area: dm;
+}
+.posNeg {
+  grid-area: ne;
+}
+.display {
+  grid-area: dp;
+}
+
+
+.App {
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 500px;
+  text-align: center;
+  background-color: dimgray;
+}
+
+.numero {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.operator, .clear, .posNeg, .decimal {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.clear, .posNeg {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.equal {
+  width: 60px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.calculator {
+  width: 90%;
+  height: 450px;
+  background-color: dimgray;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.display {
+  color: #ffffff;
+  line-height: 60px;
+  font-size: 60px;
+  border: .5px solid black;
+  margin-top: 20px;
+  width: 90%;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+/* .button {
+  font-size: 100px;
+} */
+/* .text {
+  transform: scale(0.36);
+} */
