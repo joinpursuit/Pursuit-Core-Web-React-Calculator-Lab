@@ -1,0 +1,25 @@
+button {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    flex: 1;
+    outline: 1px solid blueviolet;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+  }
+
+#result {
+    display: flex;
+    height: 50px;
+    flex: 1;
+    background-color: navy;
+    color: whitesmoke;
+    outline: 1px solid blueviolet;
+    justify-content: flex-end;
+    align-items: center;
+}
