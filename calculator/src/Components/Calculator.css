@@ -1,0 +1,88 @@
+.Calculator {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: 9px solid gray;
+}
+
+.Display {
+  background-color: #000;
+  border: 3px solid gray;
+  height: 100px;
+  width: 400px;
+  color: #d4af37;
+  font: 36px bold;
+  text-align: right;
+  grid-column: 1/6;
+  padding-right: 15px;
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  color: #d4af37;
+  font: 30px bold;
+}
+
+.TopRow:active {
+  background-color: white;
+  box-shadow: 0 3px gray;
+}
+.Operator:active {
+  background-color: white;
+  box-shadow: 0 3px gray;
+}
+.SecondRow:active {
+  background-color: white;
+  box-shadow: 0 3px gray;
+}
+.ThirdRow:active {
+  background-color: white;
+  box-shadow: 0 3px gray;
+}
+.FourthRow:active {
+  background-color: white;
+  box-shadow: 0 3px gray;
+}
+.BottomRow:active {
+  background-color: white;
+  box-shadow: 0 3px gray;
+}
+
+.TopRow {
+  grid-row: 2;
+  font: 30px bold;
+}
+
+.Blank {
+  grid-column: 3/4;
+  grid-row: 2;
+  font: 30px bold;
+}
+
+.SecondRow {
+  grid-row: 3;
+  font: 30px bold;
+}
+
+.ThirdRow {
+  grid-row: 4;
+  font: 30px bold;
+}
+
+.FourthRow {
+  grid-row: 5;
+  font: 30px bold;
+}
+
+.BottomRow {
+  grid-row: 6;
+  font: 30px bold;
+}
+
+.Operator {
+  background-color: slategray;
+  grid-column: 4;
+  font: 36px bold;
+}
