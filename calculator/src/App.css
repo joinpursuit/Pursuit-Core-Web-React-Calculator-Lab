@@ -1,0 +1,28 @@
+.Calculator {
+  border: solid black 2px;
+  width: 500px;
+  height: 460px;
+  background-color: blanchedalmond;
+  
+  /* display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+.Results {
+  border: solid black 4px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 3.5em;
+  background-color: orangered;
+  height: 83px;
+}
+.Keypad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 300px;
+  }
+.KeypadLR{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 70px;
+}
+
