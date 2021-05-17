@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: rgb(255,180,164);
+}
+
