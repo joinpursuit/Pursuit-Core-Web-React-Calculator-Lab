@@ -1,0 +1,115 @@
+.button-container button {
+ font-size: 36px;
+}
+
+.calculator-div{
+    background-color: rgb(14,14,14);
+    display: flex;
+    justify-content: center;
+}
+
+.display {
+  /* border: 1px solid red; */
+  width: 398px;
+  height: 40px;
+  grid-area: d;
+  text-align: end;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+
+  font-size: 62px;
+  /* text-overflow: ; */
+  color: white;
+}
+.button-container {
+  /* border: 3px solid black; */
+  background-color: rgb(32,32,32);
+  width: 400px;
+  text-align: center;
+  display: grid;
+  /* margin-left: 100px; */
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: 150px 100px 100px 100px 100px 100px;
+  /* grid-gap: 1px; */
+  grid-template-areas:
+    "d d d d"
+    "c c p m" 
+    "s g n q"
+    "f i x u"
+    "o t h a"
+    "z z e e";
+}
+
+.zero-button {
+  grid-area: z;
+  background-color: rgb(210,209,214);
+}
+.one-button {
+  grid-area: o;
+  background-color: rgb(210,209,214);
+}
+.two-button {
+  grid-area: t;
+  background-color: rgb(210,209,214);
+}
+.three-button {
+  grid-area: h;
+  background-color: rgb(210,209,214);
+}
+.four-button {
+  grid-area: f;
+  background-color: rgb(210,209,214);
+}
+.five-button {
+  grid-area: i;
+  background-color: rgb(210,209,214);
+}
+.six-button {
+  grid-area: x;
+  background-color: rgb(210,209,214);
+}
+.seven-button {
+  grid-area: s;
+  background-color: rgb(210,209,214);
+}
+.eight-button {
+  grid-area: g;
+  background-color: rgb(210,209,214);
+}
+.nine-button {
+  grid-area: n;
+  background-color: rgb(210,209,214);
+}
+.add-button {
+  grid-area: a;
+  background-color: rgb(247,144,18);
+  color: rgb(254,251,212)
+}
+.subtract-button {
+  grid-area: u;
+  background-color: rgb(247,144,18);
+  color: rgb(254,251,212)
+}
+.multiply-button {
+  grid-area: m;
+  background-color: rgb(247,144,18);
+  color: rgb(254,251,212)
+}
+.divide-button {
+  grid-area: q;
+  background-color: rgb(247,144,18);
+  color: rgb(254,251,212)
+}
+.equals-button {
+  grid-area: e;
+  background-color: rgb(247,144,18);
+  color: rgb(254,251,212)
+}
+.pos-neg-button {
+  grid-area: p;
+  background-color: rgb(198,197,202);
+}
+.AC-button {
+  grid-area: c;
+  background-color: rgb(198,197,202);
+}
