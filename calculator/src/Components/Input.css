@@ -1,0 +1,13 @@
+.input {
+    height: 4em;
+    width: 577.5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size: 3em;
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    outline: 1px solid #888;
+}

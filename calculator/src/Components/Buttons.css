@@ -1,0 +1,30 @@
+.buttons {
+    height: 4em;
+    width: 150px;
+    display: flex;
+    flex-direction: column-reverse;
+    float: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #e0e1e6;
+    color: #888;
+    flex: 1;
+    outline: 1px solid #888;
+}
+
+#operator {
+    background-color: #fe9241;
+    color: white;
+    
+}
+
+.caluclator-container {
+    width: 400px;
+    height: 600%;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+  }
