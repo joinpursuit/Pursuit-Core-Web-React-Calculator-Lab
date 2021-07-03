@@ -1,0 +1,20 @@
+{
+  "name": "fsw-react-calculator",
+  "version": "1.0.0",
+  "description": "Create a React app that mimics a simple calculator",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bongster91/FSW-React-Calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bongster91/FSW-React-Calculator/issues"
+  },
+  "homepage": "https://github.com/bongster91/FSW-React-Calculator#readme"
+}

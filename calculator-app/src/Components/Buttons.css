@@ -1,0 +1,25 @@
+.buttons button {
+    width: 5.60em;
+    height: 5.60em;
+    color: black;
+}
+
+.buttons {
+    grid-row: 2/6;
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-side {
+    background-color: orange;
+    font-weight: bold;
+}
+
+.bottom {
+    background-color: lightgray;
+}
+
+.number {
+    background-color: gray;
+}
