@@ -1,0 +1,186 @@
+/* Neon Effects by Mark Heggan
+https://codepen.io/markheggan/pen/LjrVYN */
+
+body {
+    background-color: black;
+}
+
+.container {
+  max-width: 360px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: black;
+  border-radius: 40px;
+  border: 5px solid red;
+  animation: neonRed 0.08s ease-in-out infinite alternate;
+
+}
+
+.buttons {
+  display: flex-start;
+  justify-content: space-evenly;
+}
+
+.output {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: yellow;
+  animation: neonYellow 0.08s ease-in-out infinite alternate;
+}
+
+.neonPink {
+  width: 90px;
+  height: 90px;
+  font-size: 30px;
+  border-radius: 50%;
+  color: pink;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  animation: neonPink 0.08s ease-in-out infinite alternate;
+}
+
+.neonPink:hover {
+  border: 1px solid pink;
+}
+
+.neonBlue {
+  width: 90px;
+  height: 90px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #c6e2ff;
+  animation: neonBlue 0.08s ease-in-out infinite alternate;
+}
+
+.neonBlue:hover {
+  border: 1px solid #c6e2ff;
+}
+
+.neonPurple {
+  width: 90px;
+  height: 90px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: purple;
+  outline: none;
+  border: none;
+  animation: neonPurple 0.08s ease-in-out infinite alternate;
+}
+
+.neonPurple:hover {
+  border: 1px solid purple;
+}
+
+.neonGreen {
+  width: 90px;
+  height: 90px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: green;
+  outline: none;
+  border: none;
+  animation: neonGreen 0.08s ease-in-out infinite alternate;
+}
+
+.neonGreen:hover {
+  border: 1px solid green;
+}
+
+@keyframes neonRed {
+    from {
+      box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+        0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(242, 30, 30, 0.52),
+        0 0 21px rgba(242, 30, 30, 0.92), 0 0 34px rgba(242, 30, 30, 0.78),
+        0 0 54px rgba(242, 30, 30, 0.92);
+    }
+    to {
+      box-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+        0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(242, 30, 30, 0.58),
+        0 0 22px rgba(242, 30, 30, 0.84), 0 0 38px rgba(242, 30, 30, 0.88),
+        0 0 60px rgb(242, 30, 30);
+    }
+}
+
+@keyframes neonPink {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(242, 30, 214, 0.52),
+      0 0 21px rgba(242, 30, 242, 0.92), 0 0 34px rgba(242, 30, 224, 0.78),
+      0 0 54px rgba(235, 30, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(242, 30, 207, 0.58),
+      0 0 22px rgba(235, 30, 242, 0.84), 0 0 38px rgba(224, 30, 242, 0.88),
+      0 0 60px rgb(224, 30, 242);
+  }
+}
+
+@keyframes neonBlue {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88),
+      0 0 60px rgba(30, 132, 242, 1);
+  }
+}
+
+
+@keyframes neonPurple {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(182, 30, 242, 0.52),
+      0 0 21px rgba(193, 30, 242, 0.92), 0 0 34px rgba(193, 30, 242, 0.78),
+      0 0 54px rgba(182, 30, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(193, 30, 242, 0.58),
+      0 0 22px rgba(193, 30, 242, 0.84), 0 0 38px rgba(182, 30, 242, 0.88),
+      0 0 60px rgb(193, 30, 242);
+  }
+}
+
+@keyframes neonGreen {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 242, 76, 0.52),
+      0 0 21px rgba(30, 242, 48, 0.92), 0 0 34px rgba(30, 242, 30, 0.78),
+      0 0 54px rgba(30, 242, 58, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 242, 94, 0.58),
+      0 0 22px rgba(37, 242, 30, 0.84), 0 0 38px rgba(30, 242, 58, 0.88),
+      0 0 60px rgb(30, 242, 30);
+  }
+}
+
+@keyframes neonYellow {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(238, 242, 30, 0.52),
+      0 0 21px rgba(228, 242, 30, 0.92), 0 0 34px rgba(242, 238, 30, 0.78),
+      0 0 54px rgba(238, 242, 30, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(242, 238, 30, 0.58),
+      0 0 22px rgba(228, 242, 30, 0.84), 0 0 38px rgba(228, 242, 30, 0.88),
+      0 0 60px rgb(228, 242, 30);
+  }
+}
