@@ -1,25 +1,23 @@
 # React Calculator
 
-Create a React app that mimics a simple calculator
+A smart caculator built entirely with React
 
 ## Overview
 
-- Please use `create-react-app` to generate your project
-- Break your application down to necessary components
+- Calculator utilizes a number of mathetical functions including Parentheses math using Dijkstra's algorithm.
+- Responsive web application displays full equation on screen
 
 ## UI
 
-Example project: https://www.coreyladovsky.com/calculator/
+Deployed online here: [SmartCalculator](https://smartcalculator.netlify.app/)
 
-Feel free to make the design your own.  Here are some real calculator UIs that you can use for inspiration.
+Similar Calculator design templates:
 
 <img src="./images/exampleScreenshotOne.png" alt="Example One" width="400">
 <img src="./images/exampleScreenshotTwo.png" alt="Example Two" width="400">
 <img src="./images/exampleScreenshotThree.png" alt="Example Three" width="400">
 
-## User Stories, Acceptance Criteria, and Code Quality Rubric
-
-You must implement all of the user stories and acceptance criteria below. After those are completed, look at and implement as many of the stretch features as you want to.
+## User Stories
 
 ### User Stories
 
@@ -100,13 +98,6 @@ Helpful Libraries for Decimals:
 - [math.js](https://mathjs.org/)
 
 
-## State
 
-State will be an important component of your application.  It may be helpful to think about incorporating the following elements into your state:
-
-- displayValue (What the screen currently displays)
-- previousValue (What value the user selected before pressing an operation button)
-- operation (What operation the user is performing (+/-/÷/x))
-
-## Deploy 
-Deploy your app following these [instructions](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/react/react_deployment)
+## Deployment 
+Deployed using these [instructions](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/react/react_deployment)
