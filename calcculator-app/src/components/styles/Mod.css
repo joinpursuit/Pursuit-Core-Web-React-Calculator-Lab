@@ -1,0 +1,51 @@
+button{
+
+    border: black solid 2px;
+    width: 80px;
+    height: 50px;
+    font-size: 35px;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+
+.parent-mod{
+    display: flex;
+  flex-direction: column;
+ 
+}
+@media only screen and (max-width: 400px) {
+
+    button{
+
+        border: black solid 2px;
+        width: 40px;
+        height: 30px;
+        font-size: 15px;
+        background-color: yellow;
+    }
+    li{
+        list-style: none;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+    }
+    
+    .parent-mod{
+        display: flex;
+      flex-direction: column;
+     
+    }
+
+
+
+
+
+}
